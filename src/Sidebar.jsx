@@ -1,15 +1,15 @@
 import {BsPlus, BsGearFill} from 'react-icons/bs'
-import {FaFire, FaUserCircle} from 'react-icons/fa'
+import {FaFire, FaUserCircle, FaCompass} from 'react-icons/fa'
 
 export default function Sidebar() {
     return (
         <div className="fixed top-0 left-0 h-screen w-16
                         flex flex-col
                         bg-gray-900 text-white shadow-lg">
-            <SidebarIcon icon={<FaUserCircle size='28' />} />
-            <SidebarIcon icon={<BsPlus size="32" />} />
-            <SidebarIcon icon={<FaFire size="20" />} />
-            <SidebarIcon icon={<BsGearFill size="20" />} />
+            <SidebarIcon icon={<FaUserCircle size='28' />} text='Direct Messages' />
+            <SidebarIcon icon={<FaFire size="28" />} text='Server' />
+            <SidebarIcon icon={<BsPlus size="28" />} text='Add a Server' />
+            <SidebarIcon icon={<FaCompass size="24" />} text='Explore Discoverable Servers' />
         </div>
     );
 }
